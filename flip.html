@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flip</title>
+
+
+    <style>
+        .cards-section{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card{
+            margin: 1rem;
+            perspective: 1000px;
+        }
+        .card-container{
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: center;
+            
+            transition: all 1s ease;
+
+            transform-style: preserve-3d;
+        }
+        .card-front{
+            grid-area: 1 / 1;
+            transform: rotateY(180deg);
+        }
+        .card-back{
+            grid-area: 1 / 1;
+        }
+        .card-container img{
+            width: 15rem;
+        }
+
+        .card:hover .card-container{
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <section class="cards-section">
+        <div class="card">
+            <div class="card-container">
+                <div class="card-front">
+                    <img src="images/annie.jpg">
+                </div>
+                <div class="card-back">
+                    <img src="images/emma.jpg">
+                </div>
+            </div>
+        </div>
+
+        <!-- card 2 -->
+
+        <div class="card">
+            <div class="card-container">
+                <div class="card-front">
+                    <img src="images/annie.jpg">
+                </div>
+                <div class="card-back">
+                    <img src="images/emma.jpg">
+                </div>
+            </div>
+        </div>
+
+
+         <!-- card 2 -->
+
+         <div class="card">
+            <div class="card-container">
+                <div class="card-front">
+                    <img src="images/annie.jpg">
+                </div>
+                <div class="card-back">
+                    <img src="images/emma.jpg">
+                </div>
+            </div>
+        </div>
+
+         <!-- card 2 -->
+
+         <div class="card">
+            <div class="card-container">
+                <div class="card-front">
+                    <img src="images/annie.jpg">
+                </div>
+                <div class="card-back">
+                    <img src="images/emma.jpg">
+                </div>
+            </div>
+        </div>
+
+         <!-- card 2 -->
+
+         <div class="card">
+            <div class="card-container">
+                <div class="card-front">
+                    <img src="images/annie.jpg">
+                </div>
+                <div class="card-back">
+                    <img src="images/emma.jpg">
+                </div>
+            </div>
+        </div>
+
+         <!-- card 2 -->
+
+         <div class="card">
+            <div class="card-container">
+                <div class="card-front">
+                    <img src="images/annie.jpg">
+                </div>
+                <div class="card-back">
+                    <img src="images/emma.jpg">
+                </div>
+            </div>
+        </div>
+
+         <!-- card 2 -->
+
+         <div class="card">
+            <div class="card-container">
+                <div class="card-front">
+                    <img src="images/annie.jpg">
+                </div>
+                <div class="card-back">
+                    <img src="images/emma.jpg">
+                </div>
+            </div>
+        </div>
+
+         <!-- card 2 -->
+
+         <div class="card">
+            <div class="card-container">
+                <div class="card-front">
+                    <img src="images/annie.jpg">
+                </div>
+                <div class="card-back">
+                    <img src="images/emma.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
